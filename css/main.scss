@@ -1,0 +1,45 @@
+$tc: white;
+//text color
+$bc: #262d2e;
+//background color
+$bdrc: black;
+//border color
+$htxt: monospace;
+//header text
+$btxt: serif;
+//body text
+
+
+        
+
+
+#header {
+    margin: 0px auto;
+    width: 95%;
+    height: 100px;
+    background-color: $bc;
+    color: $tc;
+    font-family: $htxt;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px $bdrc;
+    font-size: 115%;
+}
+
+
+
+#footer {
+
+    @extend #header;
+    
+    a {
+        text-decoration: none;
+        color: $tc;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    height: 50px;
+}
