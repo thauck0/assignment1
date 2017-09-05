@@ -10,6 +10,10 @@ $dtxt: monospace;
 //display text
 $btxt: serif;
 //body text
+$asize: 25px;
+//link font size
+$hh: 100px;
+//header height
 @mixin border {
     border: 3px solid $bdrc;
 }
@@ -17,7 +21,7 @@ $btxt: serif;
 #header {
     margin: 0px auto;
     width: 95%;
-    height: 100px;
+    height: $hh;
     background-color: $bc;
     color: $tc;
     font-family: $dtxt;
@@ -42,9 +46,10 @@ $btxt: serif;
     text-align: center;
     margin: 10px 10px 10px 10px;
     font-family: $dtxt;
-    font-size: 25px;
+    font-size: $asize;
     vertical-align: middle;
-    padding-top: 30px;
+    padding-top: $asize * 1.5;
+    //Sass Math
         
     a {
         text-decoration: none;
@@ -71,6 +76,7 @@ $btxt: serif;
     a:hover {
         text-decoration: underline;
     }
-    height: 50px;
+    height: $hh / 2;
+    //Sass math
     margin-top: 10px;
 }
