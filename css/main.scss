@@ -1,17 +1,18 @@
 $tc: white;
 //text color
-$bc: #262d2e;
+$ltc: lighten(#152c2f, 60%);
+// lighten text color
+$bc: #152c2f;
 //background color
 $bdrc: black;
 //border color
-$htxt: monospace;
-//header text
+$dtxt: monospace;
+//display text
 $btxt: serif;
 //body text
-
-
-        
-
+@mixin border {
+    border: 3px solid $bdrc;
+}
 
 #header {
     margin: 0px auto;
@@ -19,27 +20,57 @@ $btxt: serif;
     height: 100px;
     background-color: $bc;
     color: $tc;
-    font-family: $htxt;
+    font-family: $dtxt;
     text-align: center;
     padding-top: 10px;
-    border: 1px $bdrc;
+    @include border;
     font-size: 115%;
 }
 
+#assign {
+    width: 95%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    width: 30%;
+    background-color: $bc;
+    height: 75px;
+    @include border;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    font-family: $dtxt;
+    font-size: 25px;
+    vertical-align: middle;
+    padding-top: 30px;
+        
+    a {
+        text-decoration: none;
+        color: $tc;
+        border-bottom: solid 1px transparent;
+        transition: border-bottom-color .2s ease-out;
+    }
+     a:hover {
+    border-bottom: solid 2px $ltc;
+    color: $ltc;
+  }
+    a:visited { 
+    color: darken($ltc, 40%);
+  }
+}
 
 
 #footer {
-
     @extend #header;
-    
     a {
         text-decoration: none;
         color: $tc;
     }
-    
     a:hover {
         text-decoration: underline;
     }
-    
     height: 50px;
+    margin-top: 10px;
 }

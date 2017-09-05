@@ -2,16 +2,45 @@
   margin: 0px auto;
   width: 95%;
   height: 100px;
-  background-color: #262d2e;
+  background-color: #152c2f;
   color: white;
   font-family: monospace;
   text-align: center;
   padding-top: 10px;
-  border: 1px black;
+  border: 3px solid black;
   font-size: 115%; }
 
+#assign {
+  width: 95%;
+  margin: 0px auto;
+  text-align: center; }
+
+.box {
+  display: inline-block;
+  width: 30%;
+  background-color: #152c2f;
+  height: 75px;
+  border: 3px solid black;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  font-family: monospace;
+  font-size: 25px;
+  vertical-align: middle;
+  padding-top: 30px; }
+  .box a {
+    text-decoration: none;
+    color: white;
+    border-bottom: solid 1px transparent;
+    transition: border-bottom-color .2s ease-out; }
+  .box a:hover {
+    border-bottom: solid 2px #a1cfd5;
+    color: #a1cfd5; }
+  .box a:visited {
+    color: #356e76; }
+
 #footer {
-  height: 50px; }
+  height: 50px;
+  margin-top: 10px; }
   #footer a {
     text-decoration: none;
     color: white; }
