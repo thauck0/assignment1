@@ -11,7 +11,7 @@ $dtxt: monospace;
 $btxt: serif;
 //body text
 $asize: 25px;
-//link font size
+//body link font size
 $hh: 100px;
 //header height
 @mixin border {
@@ -29,6 +29,7 @@ $hh: 100px;
     padding-top: 10px;
     @include border;
     font-size: 115%;
+
 }
 
 #assign {
@@ -74,9 +75,28 @@ $hh: 100px;
         color: $tc;
     }
     a:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
     height: $hh / 2;
     //Sass math
     margin-top: 10px;
+}
+
+
+//Media Queries
+
+@media only screen and (max-width : 525px){
+    
+    h1 {
+        
+        font-size:  125%;
+    }
+    
+    .box {
+        
+        font-size: $asize * .65;
+    }
+    
+   
+    
 }

@@ -45,6 +45,13 @@
     text-decoration: none;
     color: white; }
   #footer a:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
+
+@media only screen and (max-width: 525px) {
+  h1 {
+    font-size: 125%; }
+
+  .box {
+    font-size: 16.25px; } }
 
 /*# sourceMappingURL=main.css.map */
